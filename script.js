@@ -1,5 +1,19 @@
 let isMouseDown = false;
 let color = "black";
+let buttons = document.querySelectorAll('.btn, .subbtn');
+let sound = document.querySelector('.myAudio');
+let sound2 = document.querySelector('.myAudio2');
+
+buttons.forEach(button => {
+    button.addEventListener('mouseenter', function(){
+        sound.currentTime = 0;
+        sound.play();
+    });
+    button.addEventListener('mousedown', function(){
+        sound2.currentTime = 0;
+        sound2.play();
+    });
+});
 
 function createBoard(size){
     let board = document.querySelector('.board');
