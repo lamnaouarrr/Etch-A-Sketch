@@ -1,0 +1,157 @@
+.myVideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    filter: brightness(10%);
+}
+
+.container{
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #48dbfb;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+:root {
+    --primary-color: #48dbfb;
+    --secondary-color: #2f3640;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+}
+
+.board{
+    display: grid;
+    width: 500px;
+    height: 500px;
+    border: 3px dotted #48dbfb;
+}
+
+.error{
+    color: red;
+}
+
+.btn{
+    margin: 10px 0px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    border: 3px dotted #dcdde1;
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: 'Open Sans', sans-serif;
+    transition: transform 0.5s ease;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 3px dotted #48dbfb;
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+.input{
+    display: flex;
+    gap: 8px;
+}
+
+.in{
+    height: 49px;
+    padding: 0px 20px;
+}
+
+.subbtn{
+    padding: 10px 0px;
+    transition: transform 0.5s ease;
+}
+
+.subbtn, .in{
+    width: 100px;
+    margin: 10px 0px;
+    background-color: var(--primary-color);
+    color: #2f3640;
+    border: 3px dotted #dcdde1;
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.subbtn:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 3px dotted #48dbfb;
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    gap: 800px;
+}
+
+li{
+    list-style-type: none;
+}
+
+.odin{
+    width: 350px;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.ayb{
+    width: 100px;
+    height: auto;
+    border-radius: 50px;
+    transition: transform 0.5s ease;
+}
+
+img:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+.footer{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+    color: #c8d6e5;
+    font-size: 20px;
+    padding: 20px;
+    border-top: 3px dotted #dcdde1;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.readme{
+    text-decoration: none;
+    color: white;
+    padding: 0 5px;
+}

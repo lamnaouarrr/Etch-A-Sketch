@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <link href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="https://www.theodinproject.com/lessons/foundations-etch-a-sketch"><img class = "odin" src="./Images/the-odin-project-logo-skill-finder-partners-page.png" alt="theodinproject"></a></li>
+            <li><a href="https://github.com/lamnaouarrr"><img class="ayb" src="./Images/lamnaouarrr__futuristic__cyberpunk_53cd5604-6234-4a5c-977e-cc446b2c1812.png" alt="lamnaouarrr__futuristic__cyberpunk_53cd5604-6234-4a5c-977e-cc446b2c1812"></a></li>
+        </ul> 
+    </header>
+
+    <video autoplay muted loop class="myVideo">
+        <source src="./Video/iso-republic-abstract-color-lines.mp4" type="video/mp4">
+    </video>
+    <h1 class="title">Etch A Sketch</h1>
+    <div class="container">
+        <div class="board"></div>
+        <div class="buttons">
+            <button class="btn" onclick="changeColor('black')">Black</button>
+            <button class="btn" onclick="changeColor('random')">Random</button>
+            <button class="btn">
+                <input type="color" onchange="changeColor(this.value)"><br>
+                <br>Choose a Color
+            </button>
+            <button class="btn" onclick="changeColor('white')">Eraser</button>
+            <button class="btn" onclick="resetBoard()">Reset</button>
+            <div>
+                <div class="input">
+                    <input class="in" type="text" placeholder="Size of board" value="16" onchange="changeSize(this.value)">
+                    <button class="subbtn">Set Size</button>
+                </div>
+                <p class="error"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">An <a class="readme" href="https://www.theodinproject.com/lessons/foundations-etch-a-sketch"><b>"Odin Project"</b></a> Project done by <a class="readme" href="https://github.com/lamnaouarrr"><b>Ayoub Lamnaouar</b></a>, check<a class="readme" href="./README.md"><b>README.md</b></a>for recourses.</div>
+</body>
+</html>
